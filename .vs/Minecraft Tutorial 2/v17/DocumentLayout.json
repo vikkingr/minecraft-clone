@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73C3F3C0-8CED-C05F-388A-08BEB4BE33CA}|Assembly-CSharp.csproj|c:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\minecraft tutorial 2\\minecraft tutorial 2\\assets\\scripts\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C3F3C0-8CED-C05F-388A-08BEB4BE33CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C3F3C0-8CED-C05F-388A-08BEB4BE33CA}|Assembly-CSharp.csproj|C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\assets\\scripts\\voxeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C3F3C0-8CED-C05F-388A-08BEB4BE33CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\voxeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C3F3C0-8CED-C05F-388A-08BEB4BE33CA}|Assembly-CSharp.csproj|C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\assets\\scripts\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C3F3C0-8CED-C05F-388A-08BEB4BE33CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chunk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\Assets\\Scripts\\World.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\World.cs",
+              "ToolTip": "C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\Assets\\Scripts\\World.cs",
+              "RelativeToolTip": "Assets\\Scripts\\World.cs",
+              "ViewState": "AgIAAAMAAACALzMzMzP7vzwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T23:32:35.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VoxelData.cs",
+              "DocumentMoniker": "C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\Assets\\Scripts\\VoxelData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\VoxelData.cs",
+              "ToolTip": "C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\Assets\\Scripts\\VoxelData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\VoxelData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T19:41:08.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Chunk.cs",
+              "DocumentMoniker": "C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\Assets\\Scripts\\Chunk.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Chunk.cs",
+              "ToolTip": "C:\\dev\\sandbox\\unity_tutorials\\minecraft_tutorials\\Minecraft Tutorial 2\\Minecraft Tutorial 2\\Assets\\Scripts\\Chunk.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Chunk.cs",
+              "ViewState": "AgIAAA8AAAAgzczMzMwiwCAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T19:36:38.878Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
