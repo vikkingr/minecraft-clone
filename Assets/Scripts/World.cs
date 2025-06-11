@@ -5,6 +5,8 @@ public class World : MonoBehaviour
 	public Material material;
 	public BlockType[] blockTypes;
 
+	Chunk[,] chunks = new Chunk[VoxelData.WorldSizeInChunks, VoxelData.WorldSizeInChunks];
+
 	private void Start()
 	{
 		GenerateWorld();
@@ -16,8 +18,60 @@ public class World : MonoBehaviour
 		{
 			for (int z = 0; z < VoxelData.WorldSizeInChunks; z++)
 			{
-				Chunk newChunk = new Chunk(new ChunkCoord(x, z), this);
+				CreateNewChunk(x, z);
 			}
+		}
+	}
+
+	public byte GetVoxel(Vector3 pos)
+	{
+		if (!IsVoxelInWorld(pos))
+		{
+			return 0;
+		}
+		else if (pos.y < 1)
+		{
+			return 1;
+		}
+		else if (pos.y == VoxelData.ChunkHeight - 1)
+		{
+			return 3;
+		}
+		else
+		{
+			return 2;
+		}
+	}
+
+	void CreateNewChunk(int x, int z)
+	{
+		chunks[x, z] = new Chunk(new ChunkCoord(x, z), this);
+	}
+
+	bool IsChunkInWorld(ChunkCoord coord)
+	{
+		if (coord.x > 0 && coord.x < VoxelData.WorldSizeInChunks - 1
+			&& coord.z > 0 && coord.z < VoxelData.WorldSizeInChunks - 1)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	bool IsVoxelInWorld(Vector3 pos)
+	{
+		if (pos.x >= 0 && pos.x < VoxelData.WorldSizeInVoxels
+			&& pos.y >= 0 && pos.y < VoxelData.ChunkHeight
+			&& pos.z >= 0 && pos.z < VoxelData.WorldSizeInVoxels)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
 		}
 	}
 

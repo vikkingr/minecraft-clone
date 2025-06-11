@@ -5,6 +5,8 @@ using UnityEngine;
 public class Chunk
 {
 	public ChunkCoord coord;
+	public bool isActive { get { return chunkObject.activeSelf; } set { chunkObject.SetActive(value); } }
+	public Vector3 position { get { return chunkObject.transform.position; } }
 
 	GameObject chunkObject;
 	MeshRenderer meshRenderer;
@@ -43,18 +45,7 @@ public class Chunk
 			for (int x = 0; x < VoxelData.ChunkWidth; x++)
 				for (int z = 0; z < VoxelData.ChunkWidth; z++)
 				{
-					if (y < 1)
-					{
-						voxelMap[x, y, z] = 1;
-					}
-					else if (y == VoxelData.ChunkHeight - 1)
-					{
-						voxelMap[x, y, z] = 3;
-					}
-					else
-					{
-						voxelMap[x, y, z] = 2;
-					}
+					voxelMap[x, y, z] = world.GetVoxel(new Vector3(x, y, z) + position);
 				}
 	}
 
@@ -69,14 +60,25 @@ public class Chunk
 				}
 	}
 
+	bool IsVoxelInChunk(int x, int y, int z)
+	{
+		if (x < 0 || x > VoxelData.ChunkWidth - 1 || y < 0 || y > VoxelData.ChunkHeight - 1 || z < 0 || z > VoxelData.ChunkWidth - 1)
+			return false;
+		else
+			return true;
+	}
+
 	bool CheckVoxel(Vector3 pos)
 	{
 		int x = Mathf.FloorToInt(pos.x);
 		int y = Mathf.FloorToInt(pos.y);
 		int z = Mathf.FloorToInt(pos.z);
 
-		if (x < 0 || x > VoxelData.ChunkWidth - 1 || y < 0 || y > VoxelData.ChunkHeight - 1 || z < 0 || z > VoxelData.ChunkWidth - 1)
-			return false;
+		if (!IsVoxelInChunk(x, y, z))
+		{
+			// return false will solve bug of no top texture for now
+			return world.blockTypes[world.GetVoxel(pos + position)].isSolid;
+		}
 
 		return world.blockTypes[voxelMap[x, y, z]].isSolid;
 	}
