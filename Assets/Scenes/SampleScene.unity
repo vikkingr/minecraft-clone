@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61018630ea0e36e459c6facd65fe32b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 963194228}
   material: {fileID: 2100000, guid: 120d7393ecc26ef478e6958177b44cb7, type: 2}
   blockTypes:
   - blockName: Air
@@ -236,8 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad5081eda1451a4191731a176f48115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 408608428}
-  meshFilter: {fileID: 408608429}
 --- !u!23 &408608428
 MeshRenderer:
   m_ObjectHideFlags: 0
